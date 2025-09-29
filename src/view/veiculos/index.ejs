@@ -1,0 +1,26 @@
+<%-
+  include('../layout', {
+    title: 'Listagem de veículos',
+    body: `
+      <table>
+        <thead>
+          <tr><th>ID</th><th>Nome</th><th style="width:220px">Ações</th></tr>
+        </thead>
+        <tbody>
+          ${veiculos.map(v => `
+            <tr>
+              <td>${v.id}</td>
+              <td>${v.nome}</td>
+              <td>
+                <a class="btn secondary" href="/veiculos/${v.id}/editar">Editar</a>
+                <form class="inline" method="POST" action="/veiculos/${v.id}?_method=DELETE">
+                  <button class="btn" type="submit">Excluir</button>
+                </form>
+              </td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `
+  })
+%>

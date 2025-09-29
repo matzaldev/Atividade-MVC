@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title><%= title || 'Listagem de Veículos' %></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      margin: 24px;
+      background: #f5f5f5 url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2NiNWJma21uajhrMmk3YWJqbXlxaW83anl4YTcwanNvMTh3M2R6cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l41YkRYotwVzZdRZu/giphy.gif') center center/cover no-repeat fixed;
+      color: #222;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+  background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 12px 16px 0 16px;
+    }
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:24px;
+      font-size: 1.5rem;
+  background: #fff;
+      border-radius: 12px;
+      padding: 8px 0 4px 0;
+    }
+    nav {
+  background: #fff;
+      border-radius: 8px;
+      padding: 2px 6px;
+    }
+    main {
+  background: #fff;
+      border-radius: 12px;
+      padding: 8px 0;
+    }
+    footer {
+  background: #fff;
+      border-radius: 8px;
+      padding: 6px 0;
+      color: #888;
+      font-size: 14px;
+      margin-top: 32px;
+      text-align: center;
+    }
+    table {
+      width:100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      font-size: 1.08rem;
+    }
+    th {
+      background: #f5f5f5;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 14px 12px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #e0e0e0;
+      font-size: 1.05rem;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    a.btn, button.btn {
+      display:inline-block;
+      padding:10px 18px;
+      border:none;
+      background:#222;
+      color:#fff;
+      text-decoration:none;
+      border-radius:8px;
+      font-size: 1rem;
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+    a.btn:hover, button.btn:hover {
+      background:#444;
+    }
+    .btn.secondary {
+      background:#fff;
+      color:#222;
+      border:1px solid #222;
+    }
+    .btn.secondary:hover {
+      background:#f5f5f5;
+    }
+    form.inline { display:inline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><%= title || 'Gestão de Veículos' %></h1>
+      <nav><a class="btn" href="/veiculos/novo">Adicionar veículo</a></nav>
+    </header>
+    <main><%- body %></main>
+  <footer style="margin-top:32px; text-align:center; color:#888; font-size:14px;">Projeto de DSM 3º Semestre: Sistema simples para controle de veículos &copy; 2025</footer>
+  </div>
+</body>
+</html>
