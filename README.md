@@ -1,6 +1,6 @@
 # 🚗 Gestão de Veículos - Atividade MVC
 
-Bem-vindo ao projeto de MVC do terceiro semestre de DSM! Aqui você encontra um sistema simples (mas moderno!) para cadastro, edição e exclusão de veículos, feito especialmente para a disciplina de Desenvolvimento Web 3.
+Bem-vindo ao projeto de Desenvolvimento Web 3 do terceiro semestre de DSM! Aqui você encontra um sistema simples (mas moderno!) para cadastro, edição e exclusão de veículos, feito especialmente para a disciplina de Desenvolvimento Web 3.
 
 ## Sobre o projeto
 
